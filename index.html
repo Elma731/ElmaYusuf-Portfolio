@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elma Yusuf | Web Developer — Abuja, Nigeria</title>
+
+  <!-- ===== SEO META TAGS ===== -->
+  <meta name="description" content="Elma Yusuf is a web developer based in Abuja, Nigeria specializing in modern responsive websites and dashboards." />
+  <meta name="keywords" content="web developer Nigeria, Abuja web developer, frontend developer Nigeria, freelance web developer" />
+  <meta name="author" content="Elma Yusuf" />
+  <link rel="canonical" href="https://elma731.github.io" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:title" content="Elma Yusuf — Web Developer" />
+  <meta property="og:description" content="Web developer based in Abuja, Nigeria. I build modern, responsive websites for businesses worldwide." />
+  <meta property="og:url" content="https://elma731.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Elma Yusuf — Web Developer" />
+  <meta name="twitter:description" content="Web developer based in Abuja, Nigeria. I build modern, responsive websites for businesses worldwide." />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- ===== FONT PRELOAD ===== -->
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" />
+
+  <!-- ===== PROFILE IMAGE PRELOAD ===== -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ===== SITE HEADER (Annie-style split nav) ===== -->
+  <header class="site-header" id="site-header">
+
+    <!-- TOP BAR: Identity + Socials -->
+    <div class="header-top">
+      <div class="container header-top-inner">
+        <a href="#" class="header-logo" aria-label="Elma Yusuf — home">
+          <span class="logo-monogram">EY</span>
+          <span class="logo-name">Elma Yusuf</span>
+        </a>
+        <div class="header-right">
+          <span class="available-pill header-available-pill">
+            <span class="available-dot"></span>
+            Available for work
+          </span>
+          <div class="header-socials">
+            <a href="https://github.com/Elma731" target="_blank" rel="noopener noreferrer" class="header-social-icon" aria-label="GitHub profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="header-social-icon" aria-label="LinkedIn profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hello@elmayusuf.com" class="header-social-icon" aria-label="Send email to Elma Yusuf">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM NAV BAR: Navigation -->
+    <nav class="header-nav" id="header-nav" role="navigation" aria-label="Main navigation">
+      <div class="container header-nav-inner">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about"     class="nav-link">About</a></li>
+          <li><a href="#work"      class="nav-link">Work</a></li>
+          <li><a href="#skills"    class="nav-link">Skills</a></li>
+          <li><a href="#fun-facts" class="nav-link">Fun Facts</a></li>
+          <li><a href="#contact"   class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+
+      <!-- Decorative dot cluster (hidden on mobile) -->
+      <div class="hero-dot-cluster" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="container hero-container">
+
+        <div class="hero-text animate-on-scroll">
+          <p class="hero-greeting">👋 Hi, I'm</p>
+          <h1 class="hero-name">Elma Yusuf</h1>
+          <h2 class="hero-title"><span id="typed-title"></span><span class="typing-cursor">|</span></h2>
+          <div class="hero-divider"></div>
+          <p class="hero-bio">
+            I build modern, responsive websites and digital experiences. From elegant restaurant sites and corporate platforms
+            to crypto dashboards and real estate listings. If you can imagine it, I can build it.
+          </p>
+          <div class="hero-buttons">
+            <a href="#work"    class="btn btn-dark magnetic-btn">View My Work ↓</a>
+            <a href="#contact" class="btn btn-outline magnetic-btn">Get in Touch →</a>
+          </div>
+          <!-- Wavy decoration -->
+          <div class="hero-wave" aria-hidden="true">
+            <svg width="120" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,6 Q15,0 30,6 Q45,12 60,6 Q75,0 90,6 Q105,12 120,6"
+                    fill="none" stroke="#D4A5C9" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+
+          <div class="hero-available">
+            <span class="available-pill">
+              <span class="available-dot"></span>
+              Currently available for freelance projects
+            </span>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Elma731" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hello@elmayusuf.com" class="social-icon" aria-label="Send email">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap animate-on-scroll">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-container">
+              <img
+                src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400"
+                alt="Elma Yusuf — Web Developer based in Abuja, Nigeria"
+                class="hero-photo"
+                loading="eager"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="hero-photo-border"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about section" id="about">
+      <div class="container about-container">
+
+        <div class="about-text animate-on-scroll">
+          <span class="section-label">ABOUT ME</span>
+          <h2 class="section-heading">The person<br>behind the work.</h2>
+
+          <p class="about-para">
+            I'm Elma Yusuf, a web developer based in Abuja, Nigeria. I started my journey building simple pages with HTML and CSS,
+            and quickly fell in love with the process of turning designs into real, functional websites.
+          </p>
+          <p class="about-para">
+            I specialize in building clean, responsive websites for businesses. Whether it's restaurants and law firms or fashion brands and tech startups.
+            I put in the same level of passion and care, thoughtful design, clean code, and attention to detail to every project I take on.
+          </p>
+          <p class="about-para">
+            When I'm not building websites, I'm learning. Currently diving deeper into JavaScript and React to expand what I can create.
+            I'm always open to new projects, collaborations and conversations.
+          </p>
+          <p class="about-responsive-note">
+            All projects are tested across desktop, tablet and mobile devices.
+          </p>
+
+          <div class="available-badge">
+            <span class="available-dot"></span>
+            Currently available for freelance projects
+          </div>
+        </div>
+
+        <div class="about-card-wrap animate-on-scroll">
+          <div class="about-info-card">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Based in</span>
+                <span class="info-value">Abuja, Nigeria</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🌍</span>
+              <div>
+                <span class="info-label">Available</span>
+                <span class="info-value">Worldwide</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Open to</span>
+                <span class="info-value">Freelance &amp; Remote</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">elmay7799@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item no-border">
+              <span class="info-icon">🐙</span>
+              <div>
+                <span class="info-label">GitHub</span>
+                <span class="info-value">github.com/Elma731</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline btn-full">
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== WORK SECTION ===== -->
+    <section class="work section" id="work">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">MY WORK</span>
+          <h2 class="section-heading">Projects I've Built</h2>
+          <p class="section-sub">A selection of real projects built with HTML, CSS, Bootstrap and JavaScript.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs animate-on-scroll">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+          <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: Harvest & Co. -->
+          <article class="project-card animate-on-scroll" data-category="website">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="Harvest & Co. brunch restaurant website screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Website</span>
+              <h3 class="project-name">Harvest &amp; Co.</h3>
+              <p class="project-desc">
+                I built a full restaurant website featuring online ordering integration with Uber Eats and DoorDash, an image gallery,
+                Google Maps and a reservation section. This website was built with a warm, editorial aesthetic inspired by Brooklyn dining culture.
+              </p>
+              <div class="project-impact">✦ Fully responsive across all devices — tested on 5 screen sizes</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Bootstrap</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/harvest-co" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/harvest-co" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Adeyemi & Partners -->
+          <article class="project-card animate-on-scroll" data-category="website">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="Adeyemi & Partners law firm website screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Website</span>
+              <h3 class="project-name">Adeyemi &amp; Partners</h3>
+              <p class="project-desc">
+                I built a multi-page corporate law firm website featuring attorney profiles, a notable matters showcase, legal insights blog
+                and consultation request system. Built for the Nigerian corporate market.
+              </p>
+              <div class="project-impact">✦ 6-page site with 12 realistic case studies and full blog system</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Bootstrap</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/adeyemi-partners" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/adeyemi-partners" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Nexus -->
+          <article class="project-card animate-on-scroll" data-category="dashboard">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="Nexus crypto analytics dashboard screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Dashboard</span>
+              <h3 class="project-name">Nexus</h3>
+              <p class="project-desc">
+                I built a crypto analytics dashboard featuring live price simulation, candlestick charts, portfolio tracking,
+                fear &amp; greed index and a full light/dark mode toggle.
+              </p>
+              <div class="project-impact">✦ 7 interactive chart types with live data simulation and dark mode</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">ApexCharts</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/nexus" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/nexus" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: ShieldAI -->
+          <article class="project-card animate-on-scroll" data-category="landing">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="ShieldAI cybersecurity SaaS landing page screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Landing Page</span>
+              <h3 class="project-name">ShieldAI</h3>
+              <p class="project-desc">
+                I built a SaaS landing page for a cybersecurity platform featuring pricing tables, scroll animations,
+                terminal typing effect, FAQ accordion and email signup.
+              </p>
+              <div class="project-impact">✦ 10 custom animations including magnetic buttons and terminal typing</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/shieldai" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/shieldai" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Haven -->
+          <article class="project-card animate-on-scroll" data-category="website">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="Haven real estate platform screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Website</span>
+              <h3 class="project-name">Haven</h3>
+              <p class="project-desc">
+                I built a real estate listing platform for Lagos and Abuja featuring property filters, image lightbox gallery,
+                agent profiles and Google Maps integration.
+              </p>
+              <div class="project-impact">✦ Full filter system with 12 properties, lightbox gallery and map integration</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Bootstrap</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/haven" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/haven" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Belluga Vogue -->
+          <article class="project-card animate-on-scroll" data-category="website">
+            <div class="project-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800"
+                alt="Belluga Vogue luxury fashion e-commerce website screenshot"
+                class="project-img"
+                loading="lazy"
+                width="800"
+                height="450"
+              />
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Website</span>
+              <h3 class="project-name">Belluga Vogue</h3>
+              <p class="project-desc">
+                I built a luxury women's fashion e-commerce site featuring product filtering, a working cart system,
+                wishlist functionality and a full checkout flow.
+              </p>
+              <div class="project-impact">✦ Complete e-commerce flow — cart, wishlist, filters and checkout</div>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">Bootstrap</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://elma731.github.io/belluga-vogue" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-dark">Live Site →</a>
+                <a href="https://github.com/Elma731/belluga-vogue" target="_blank" rel="noopener noreferrer" class="proj-link proj-link-muted">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">SKILLS</span>
+          <h2 class="section-heading">What I Work With</h2>
+          <p class="section-sub">Tools and technologies I use to build modern websites.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Current Skills -->
+          <div class="skills-col animate-on-scroll">
+            <h3 class="skills-col-title">What I know now</h3>
+            <div class="skills-wrap">
+              <div class="skill-card">
+                <i class="bi bi-filetype-html skill-icon"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-filetype-css skill-icon"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-bootstrap skill-icon"></i>
+                <span>Bootstrap 5</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-filetype-js skill-icon"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-git skill-icon"></i>
+                <span>Git &amp; GitHub</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-phone skill-icon"></i>
+                <span>Responsive Design</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-brush skill-icon"></i>
+                <span>UI Design</span>
+              </div>
+              <div class="skill-card">
+                <i class="bi bi-globe skill-icon"></i>
+                <span>Web Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Learning -->
+          <div class="skills-col animate-on-scroll">
+            <h3 class="skills-col-title skills-col-title--gold">Currently learning</h3>
+            <div class="skills-wrap">
+              <div class="skill-card skill-card--learning">
+                <i class="bi bi-filetype-js skill-icon"></i>
+                <span>Advanced JavaScript</span>
+                <span class="learning-badge">Learning</span>
+              </div>
+              <div class="skill-card skill-card--learning">
+                <i class="bi bi-braces skill-icon"></i>
+                <span>React.js</span>
+                <span class="learning-badge">Learning</span>
+              </div>
+              <div class="skill-card skill-card--learning">
+                <i class="bi bi-server skill-icon"></i>
+                <span>Node.js</span>
+                <span class="learning-badge">Learning</span>
+              </div>
+              <div class="skill-card skill-card--learning">
+                <i class="bi bi-database skill-icon"></i>
+                <span>Databases</span>
+                <span class="learning-badge">Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /skills-grid -->
+
+        <div class="skills-quote animate-on-scroll">
+          <blockquote>
+            "Good code is not just about making it work — it's about making it work beautifully."
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FUN FACTS SECTION ===== -->
+    <section class="fun-facts section" id="fun-facts">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">FUN FACTS</span>
+          <h2 class="section-heading">A little about me<br>beyond the code.</h2>
+          <p class="section-sub">Because I'm more than just a developer. Here are some things that make me, me.</p>
+        </div>
+
+        <div class="fun-facts-grid">
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">🌍</div>
+            <h3 class="fun-fact-title">Nigeria is my superpower</h3>
+            <p class="fun-fact-desc">Being based in Abuja gives me a unique perspective on building for both African and global markets.</p>
+          </div>
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">🥤</div>
+            <h3 class="fun-fact-title">Fueled by Coca-Cola</h3>
+            <p class="fun-fact-desc">Every great website I've built started with a chilled bottle of coke. It's basically part of my stack.</p>
+          </div>
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">🎨</div>
+            <h3 class="fun-fact-title">Design-first mindset</h3>
+            <p class="fun-fact-desc">I care deeply about how things look — not just how they work. Good design and good code aren't opposites.</p>
+          </div>
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">📱</div>
+            <h3 class="fun-fact-title">Mobile-first, always</h3>
+            <p class="fun-fact-desc">I test every project on my phone first. If it doesn't look great on mobile, it's not ready.</p>
+          </div>
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">🏗️</div>
+            <h3 class="fun-fact-title">Built to grow</h3>
+            <p class="fun-fact-desc">I've built everything from restaurant websites and law firm platforms to crypto dashboards and real estate listings. Each one was crafted with care and attention to detail.</p>
+          </div>
+
+          <div class="fun-fact-card animate-on-scroll">
+            <div class="fun-fact-emoji">🌐</div>
+            <h3 class="fun-fact-title">Ready for two markets</h3>
+            <p class="fun-fact-desc">Positioned to serve both local businesses in Abuja and international clients. One developer, two markets, endless possibilities.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL PROOF BAND ===== -->
+    <!-- Replace coming-soon message with real testimonials when available -->
+    <div class="social-proof-band" id="testimonials">
+      <p class="social-proof-coming-soon">⭐ Testimonials coming soon — currently working with my first clients.</p>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact section" id="contact">
+      <div class="container contact-container">
+
+        <div class="contact-left animate-on-scroll">
+          <span class="section-label">CONTACT</span>
+          <h2 class="section-heading">Let's Work<br>Together</h2>
+          <p class="contact-body">
+            I'm currently available for freelance projects — whether you're a business in Abuja looking for your first website,
+            or an international client on Fiverr needing a landing page or dashboard. Let's talk.
+          </p>
+
+          <div class="contact-services">
+            <p class="contact-services-title">What I can build for you</p>
+            <ul class="contact-services-list">
+              <li>✓ Business websites</li>
+              <li>✓ Restaurant &amp; hospitality sites</li>
+              <li>✓ Law firm &amp; corporate sites</li>
+              <li>✓ Fashion &amp; e-commerce sites</li>
+              <li>✓ SaaS landing pages</li>
+              <li>✓ Analytics dashboards</li>
+            </ul>
+          </div>
+
+          <div class="contact-options">
+
+            <a href="mailto:hello@elmayusuf.com" class="contact-card">
+              <div class="contact-card-icon" style="color: #C9A96E;">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <p class="contact-card-title">Email Me</p>
+                <p class="contact-card-value">hello@elmayusuf.com</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/234XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon" style="color: #25D366;">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div>
+                <p class="contact-card-title">WhatsApp</p>
+                <p class="contact-card-value">+234 (0) XXX XXX XXXX</p>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon" style="color: #C9A96E;">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div>
+                <p class="contact-card-title">Hire on Fiverr</p>
+                <p class="contact-card-value">View my Fiverr profile</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-right animate-on-scroll">
+          <h3 class="contact-form-title">Send me a message</h3>
+          <p class="contact-response-time">⚡ Typical response time: under 24 hours</p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+              <span class="form-error" id="nameError">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+              <span class="form-error" id="emailError">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-input form-select" required>
+                <option value="" disabled selected>Choose a subject</option>
+                <option value="web-design">Web Design Project</option>
+                <option value="landing-page">Landing Page</option>
+                <option value="dashboard">Dashboard</option>
+                <option value="hi">Just saying hi 👋</option>
+              </select>
+              <span class="form-error" id="subjectError">Please select a subject.</span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project…" rows="5" required></textarea>
+              <span class="form-error" id="messageError">Please enter your message.</span>
+            </div>
+            <div id="formSubmitWrap">
+              <button type="submit" class="btn btn-dark btn-full" id="submitBtn">Send Message →</button>
+            </div>
+            <div class="form-success" id="formSuccess">
+              Message sent! I'll get back to you within 24 hours. 😊
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ===== CURRENTLY LEARNING BANNER ===== -->
+  <div class="learning-banner">
+    <div class="container learning-banner-inner">
+      <p class="learning-banner-text">📚 Currently leveling up: JavaScript → React → Next.js</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-left">
+        <span class="footer-logo">EY</span>
+        <p class="footer-name">Elma Yusuf — Web Developer</p>
+        <p class="footer-tagline">Building modern websites from Abuja, Nigeria.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/Elma731" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub profile">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn profile">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="mailto:hello@elmayusuf.com" class="footer-social" aria-label="Send email">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Elma Yusuf. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
