@@ -278,6 +278,7 @@ scrollTopBtn.addEventListener('click', () => {
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 const submitWrap  = document.getElementById('formSubmitWrap');
+const submitBtn   = document.getElementById('submitBtn');
 
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -305,7 +306,7 @@ function clearError(inputId, errorId) {
 });
 
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name    = document.getElementById('name');
@@ -345,8 +346,44 @@ if (contactForm) {
 
     if (!valid) return;
 
-    submitWrap.style.display = 'none';
-    formSuccess.classList.add('visible');
-    contactForm.reset();
+    // Show loading state
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch(
+        'https://formspree.io/f/xbdqnjnr',
+        {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        }
+      );
+
+      if (response.ok) {
+        // Success — show message, hide form
+        submitWrap.style.display = 'none';
+        formSuccess.classList.add('visible');
+        contactForm.reset();
+      } else {
+        // Formspree returned an error
+        submitBtn.textContent = 'Send Message →';
+        submitBtn.disabled = false;
+        alert(
+          'Something went wrong. ' +
+          'Please email me directly at ' +
+          'elmay7799@gmail.com'
+        );
+      }
+    } catch (error) {
+      // Network error
+      submitBtn.textContent = 'Send Message →';
+      submitBtn.disabled = false;
+      alert(
+        'Something went wrong. ' +
+        'Please email me directly at ' +
+        'elmay7799@gmail.com'
+      );
+    }
   });
 }
