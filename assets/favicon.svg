@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- ElmaYusuf Portfolio — EY in footer gold on near-black -->
+  <rect width="32" height="32" rx="8" fill="#1A1916"/>
+  <text x="16" y="22.5" text-anchor="middle"
+    font-family="'Clash Display','Century Gothic','Futura',Arial,sans-serif"
+    font-weight="700" font-size="18" fill="#C9936E" letter-spacing="1.5">EY</text>
+</svg>
